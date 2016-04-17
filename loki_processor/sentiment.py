@@ -32,9 +32,9 @@ class SentimentAnalyzer:
 
         sentiment = blob.sentiment
 
-        if (0 < sentiment.polarity <= 1.0):
+        if 0 < sentiment.polarity <= 1.0:
             return 'pos'
-        elif (-1.0 <= sentiment.polarity < 0):
+        elif -1.0 <= sentiment.polarity < 0:
             return 'neg'
-        elif (sentiment.polarity == 0):
+        elif sentiment.polarity == 0:
             return 'neutral'
